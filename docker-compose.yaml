@@ -1,0 +1,14 @@
+version: '3'
+services:
+  front:
+    build: ./docker/front
+    container_name: ${APP_NAME}_front
+    volumes:
+      - ./front:/front
+    working_dir: /front
+    command: npm run dev
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - 3005:3005
