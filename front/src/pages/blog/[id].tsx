@@ -1,12 +1,11 @@
 import { Layout } from '@/components/elements';
-import { Top } from '@/components/pages';
+import { Blog } from '@/components/pages';
 
-const IndexPage = () => (
+const IndexPage = () =>
   <>
     <Layout>
-      <Top />
+      <Blog />
     </Layout>
-  </>
-);
+  </>;
 
 export default IndexPage;
